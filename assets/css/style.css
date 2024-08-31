@@ -1,0 +1,82 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+/* Global Classes */
+.p-color {
+	color: #fec222;
+}
+.p-bg-color {
+	background-color: #0c173a;
+}
+
+body {
+	background: url("/assets/img/background.png") center/cover no-repeat;
+}
+
+/* Header CSS Here */
+.header-container {
+	background: url("/assets/img/navbar.png") center/cover no-repeat;
+}
+
+/* Crads Container CSS Here */
+.back-btn {
+	position: relative;
+}
+.back-btn:hover {
+	color: #fec222;
+}
+.back-btn:hover::after {
+	background-color: #09102a;
+}
+.back-btn::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #0c173a;
+	z-index: -1;
+	border-radius: 10px;
+	transform: skew(-10deg) scale(1.1);
+	transform-origin: top left;
+}
+
+.add-new-card {
+	background: url("/assets/img/silvers.png") center/cover no-repeat;
+	min-width: 200px;
+	width: auto;
+}
+.add-new-card button {
+	position: relative;
+	outline: none;
+	top: -20px;
+	scale: calc(1.3);
+}
+
+.cards {
+	backdrop-filter: blur(50px);
+	border-radius: 30px;
+    margin: 100px 0;
+}
+.card-box {
+	background: url("/assets/img/item-bg.png") center/90% no-repeat;
+	padding: 30px;
+	clip-path: polygon(
+		20px 0%,
+		calc(100% - 20px) 0%,
+		100% 20px,
+		100% calc(100% - 20px),
+		calc(100% - 20px) 100%,
+		20px 100%,
+		0 calc(100% - 20px),
+		0 20px
+	);
+    
+}
+
+
