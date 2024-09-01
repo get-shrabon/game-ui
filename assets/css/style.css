@@ -101,10 +101,87 @@ body {
 	background: url("/assets/img/system-message.png") center/100% no-repeat;
 }
 .friends-boxes {
-	height: 300px;
+	height: 500px;
 	overflow-y: scroll;
 	padding-right: 30px;
 }
+
+.online-friends-box {
+	border-radius: 30px;
+	border-top: 4px solid #fec222;
+	background: url("/assets/img/users-friends-bg.png") center/cover no-repeat;
+}
+.divider-ver {
+	width: 1px;
+	height: 40px;
+	background-color: #999;
+}
+.filter-btns button {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	font-weight: 700;
+	background-color: rgba(255, 255, 255, 0.623);
+	background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+		url("/assets/img/mode-button.png") center/cover no-repeat;
+	border: none;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-top: 3px solid #fec222;
+}
+.filter-btns button.active {
+	color: white !important;
+	background-image: linear-gradient(#ce7a19b9, #ce7a19b9),
+		url("/assets/img/mode-button.png");
+}
+.friends-items {
+	height: 400px;
+	overflow-y: scroll;
+	padding-right: 10px;
+}
+.friend-request-item {
+	background-color: #0c397d;
+	width: 100%;
+	color: white;
+	margin-bottom: 20px;
+}
+.friend-request-item:nth-child(even) {
+	background-color: #4b2759;
+}
+.friend-request-item:nth-child(even) img {
+	border-color: magenta;
+}
+.friend-request-item img {
+	width: 60px;
+	height: 60px;
+	object-fit: cover;
+	border: 3px solid aqua;
+}
+.friend-request-item .text-success {
+	color: #55ca63 !important;
+}
+/* Footer */
+footer {
+	background: url("/assets/img/footer.png") center/cover no-repeat;
+	padding: 50px;
+}
+.footer-icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #fec222;
+	color: #09102a;
+	text-decoration: none;
+}
+
+/* Scrollbar Style here */
+
 .friends-boxes::-webkit-scrollbar {
 	width: 15px;
 	height: 10px;
@@ -124,19 +201,21 @@ body {
 	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-/* Footer */
-footer {
-	background: url("/assets/img/footer.png") center/cover no-repeat;
-	padding: 50px;
+.friends-items::-webkit-scrollbar {
+	width: 15px;
+	height: 10px;
+	background-color: #f0f0f0;
 }
-.footer-icon {
-	width: 40px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50%;
+
+.friends-items::-webkit-scrollbar-thumb {
+	background: url("/assets/img/scroll-icon.png") center/cover no-repeat;
 	background-color: #fec222;
-	color: #09102a;
-	text-decoration: none;
+	border-radius: 6px;
+	border: 3px solid #f0f0f0;
+}
+
+.friends-items::-webkit-scrollbar-track {
+	background-color: #f0f0f0;
+	border-radius: 6px;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
