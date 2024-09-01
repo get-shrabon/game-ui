@@ -23,6 +23,9 @@ body {
 }
 
 /* Crads Container CSS Here */
+.cards-header {
+	margin-bottom: 50px;
+}
 .back-btn {
 	position: relative;
 }
@@ -61,7 +64,6 @@ body {
 .cards {
 	backdrop-filter: blur(50px);
 	border-radius: 30px;
-    margin: 100px 0;
 }
 .card-box {
 	background: url("/assets/img/item-bg.png") center/90% no-repeat;
@@ -76,7 +78,65 @@ body {
 		0 calc(100% - 20px),
 		0 20px
 	);
-    
 }
 
+.chat-box {
+	background: url("/assets/img/bg-content.png") center/cover no-repeat;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+}
+.chat-footer {
+	width: 100%;
+	background-color: #121840;
+	border-bottom: 4px solid #e0b240;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.online-chat {
+	background: url("/assets/img/img-chat-character-1.png") center/100% no-repeat;
+	padding-right: 100px;
+}
+.online-chat2 {
+	background: url("/assets/img/system-message.png") center/100% no-repeat;
+}
+.friends-boxes {
+	height: 300px;
+	overflow-y: scroll;
+	padding-right: 30px;
+}
+.friends-boxes::-webkit-scrollbar {
+	width: 15px;
+	height: 10px;
+	background-color: #f0f0f0;
+}
 
+.friends-boxes::-webkit-scrollbar-thumb {
+	background: url("/assets/img/scroll-icon.png") center/cover no-repeat;
+	background-color: #fec222;
+	border-radius: 6px;
+	border: 3px solid #f0f0f0;
+}
+
+.friends-boxes::-webkit-scrollbar-track {
+	background-color: #f0f0f0;
+	border-radius: 6px;
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+	background: url("/assets/img/footer.png") center/cover no-repeat;
+	padding: 50px;
+}
+.footer-icon {
+	width: 40px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #fec222;
+	color: #09102a;
+	text-decoration: none;
+}
